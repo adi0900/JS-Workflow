@@ -38,3 +38,27 @@ Object  =>  object
 */
 
 // Reference (Non Primitive) : Array , Objects , Functions
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// stack(Primitive) , Heap(Non-Primitive)
+
+let myName = "Goku"
+let anotherName = myName
+anotherName = "Pika" //Creates a copy in the stack
+
+console.log(anotherName);
+console.log(myName);
+
+let userOne = {
+    email: "adi124213@gmail.com",
+    upi: "k1@24al"
+}
+
+let userTwo = userOne
+
+userTwo.email = "adi1991@gmail.com"    //Store the date in the heap
+
+console.log(userTwo.email);
+console.log(userOne.email);
